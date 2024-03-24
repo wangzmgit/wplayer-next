@@ -13,7 +13,7 @@ player.seek(100);
 
 - `player.toggle()`: 切换播放和暂停
 
-- `player.on(event: string, handler: function)`: 绑定视频和播放器事件，见[#事件绑定](#事件绑定)
+- `player.on(event: string, handler: function)`: 绑定视频和播放器事件，见[#事件绑定](/guide/event#事件绑定)
 
 - `player.switchVideo(video, danmakuData)`: 切换到其他视频
 

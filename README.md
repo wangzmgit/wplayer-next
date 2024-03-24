@@ -26,7 +26,7 @@ yarn add wplayer-next
 或者使用模块管理器:
 
 ```js
-import WPlayer from 'wplayer';
+import WPlayer from 'wplayer-next';
 
 const player = new WPlayer(options);
 ```
