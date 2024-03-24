@@ -1,0 +1,1 @@
+import{_ as i,c as l,o as a,a2 as e}from"./chunks/framework.CPHuzPor.js";const u=JSON.parse('{"title":"事件绑定","description":"","frontmatter":{},"headers":[],"relativePath":"guide/event.md","filePath":"guide/event.md"}'),s={name:"guide/event.md"},t=e("",7),n=[t];function d(h,p,o,r,c,k){return a(),l("div",null,n)}const E=i(s,[["render",d]]);export{u as __pageData,E as default};

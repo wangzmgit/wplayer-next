@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as l}from"./chunks/framework.CPHuzPor.js";const g=JSON.parse('{"title":"API","description":"","frontmatter":{},"headers":[],"relativePath":"guide/api.md","filePath":"guide/api.md"}'),e={name:"guide/api.md"},p=l("",19),n=[p];function t(h,k,d,E,r,c){return a(),i("div",null,n)}const y=s(e,[["render",t]]);export{g as __pageData,y as default};

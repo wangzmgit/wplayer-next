@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as t}from"./chunks/framework.CPHuzPor.js";const g=JSON.parse('{"title":"开始","description":"","frontmatter":{},"headers":[],"relativePath":"guide/index.md","filePath":"guide/index.md"}'),n={name:"guide/index.md"},e=t("",14),p=[e];function l(h,k,d,r,E,o){return a(),i("div",null,p)}const y=s(n,[["render",l]]);export{g as __pageData,y as default};
