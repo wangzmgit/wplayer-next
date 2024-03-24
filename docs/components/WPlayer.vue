@@ -4,6 +4,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { onMounted } from "vue";
 import danmakuList from './danmaku.json';
@@ -35,8 +36,14 @@ const options = {
 
 onMounted(async () => {
   options.container = document.getElementById("wplayer");
-  await import('../../dist/WPlayer.min.js')
-  player = new WPlayer(options);
+
+  const script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/wplayer-next/dist/WPlayer.min.js';
+  script.onload = () => {
+    console.log('远程UMD包已加载');
+    player = new WPlayer(options);
+  };
+  document.body.appendChild(script);
 })
 </script>
   
