@@ -1,0 +1,67 @@
+.wplayer-danmaku {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 22px;
+  color: #fff;
+
+  .wplayer-danmaku-item {
+    display: inline-block;
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+    white-space: nowrap;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+
+    &--demo {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+
+  .wplayer-danmaku-right {
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+
+    &.wplayer-danmaku-move {
+      will-change: transform;
+      animation-name: danmaku;
+      animation-timing-function: linear;
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes danmaku {
+    from {
+      transform: translateX(100%);
+    }
+  }
+
+  .wplayer-danmaku-top,
+  .wplayer-danmaku-bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+
+    &.wplayer-danmaku-move {
+      will-change: visibility;
+      animation-name: danmaku-center;
+      animation-timing-function: linear;
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes danmaku-center {
+    from {
+      visibility: visible;
+    }
+
+    to {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "wplayer-next",
+  "version": "1.0.0",
+  "description": "Wow, such a lovely HTML5 danmaku video player",
+  "main": "dist/WPlayer.min.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress",
+    "dev": "cross-env NODE_ENV=development webpack serve --config webpack/dev.config.js",
+    "test": "",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "prepare": "husky install"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "url": "git+https://github.com/wangzmgit/wplayer-next.git",
+    "type": "git"
+  },
+  "keywords": [
+    "player",
+    "danmaku",
+    "video",
+    "html5"
+  ],
+  "author": "wzm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangzmgit/wplayer-next/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "art-template": "4.13.2",
+    "art-template-loader": "1.4.3",
+    "autoprefixer": "^10.4.15",
+    "babel-loader": "^9.1.3",
+    "cross-env": "^7.0.0",
+    "css-loader": "^6.8.1",
+    "cssnano": "^6.0.1",
+    "exports-loader": "^4.0.0",
+    "file-loader": "^6.0.0",
+    "git-revision-webpack-plugin": "^5.0.0",
+    "husky": "^8.0.3",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "lint-staged": "^13.3.0",
+    "mini-css-extract-plugin": "2.7.6",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.1.1",
+    "strip-loader": "^0.1.2",
+    "style-loader": "^3.3.3",
+    "svg-inline-loader": "0.8.2",
+    "template-string-optimize-loader": "^3.0.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^19.1.0",
+    "balloon-css": "^1.0.3",
+    "promise-polyfill": "8.3.0",
+    "vitepress": "^1.0.1"
+  }
+}

@@ -1,0 +1,192 @@
+.wplayer {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  line-height: 1;
+
+  * {
+    box-sizing: content-box;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    path,
+    circle {
+      fill: #fff;
+    }
+  }
+
+  &:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    transform: translate(0, 0);
+
+  }
+
+  &.wplayer-no-danmaku {
+    .wplayer-controller .wplayer-icons .wplayer-setting .wplayer-setting-box {
+
+      .wplayer-setting-showdan,
+      .wplayer-setting-danmaku,
+      .wplayer-setting-danunlimit {
+        display: none;
+      }
+    }
+
+    .wplayer-controller .wplayer-icons .wplayer-comment {
+      display: none;
+    }
+
+    .wplayer-danmaku {
+      display: none;
+    }
+  }
+
+  &.wplayer-live {
+    .wplayer-time {
+      display: none;
+    }
+
+    .wplayer-bar-wrap {
+      display: none;
+    }
+
+    .wplayer-setting-loop {
+      display: none;
+    }
+
+    &.wplayer-no-danmaku {
+      .wplayer-setting {
+        display: none;
+      }
+    }
+  }
+
+  &.wplayer-arrow {
+    .wplayer-danmaku {
+      font-size: 18px;
+    }
+
+    .wplayer-icon {
+      margin: 0 -3px;
+    }
+  }
+
+  &.wplayer-playing {
+    .wplayer-danmaku .wplayer-danmaku-move {
+      animation-play-state: running;
+    }
+
+    @media (min-width: 900px) {
+      .wplayer-controller-mask {
+        opacity: 0;
+      }
+
+      .wplayer-controller {
+        opacity: 0;
+      }
+
+      &:hover {
+        .wplayer-controller-mask {
+          opacity: 1;
+        }
+
+        .wplayer-controller {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.wplayer-loading {
+    .wplayer-bezel .diplayer-loading-icon {
+      display: block;
+    }
+  }
+
+  &.wplayer-loading,
+  &.wplayer-paused {
+
+    .wplayer-danmaku,
+    .wplayer-danmaku-move {
+      animation-play-state: paused;
+    }
+  }
+
+  &.wplayer-hide-controller {
+    cursor: none;
+
+    .wplayer-controller-mask {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    .wplayer-controller {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  &.wplayer-show-controller {
+    .wplayer-controller-mask {
+      opacity: 1;
+    }
+
+    .wplayer-controller {
+      opacity: 1;
+    }
+  }
+
+  &.wplayer-fulled {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  &.wplayer-mobile {
+    .wplayer-controller .wplayer-icons {
+      .wplayer-play-icon {
+        display: none;
+      }
+
+      .wplayer-full-in {
+        display: none;
+      }
+    }
+
+    .wplayer-bar-time {
+      display: none;
+    }
+
+    &.wplayer-hide-controller {
+      .wplayer-mobile-play {
+        display: none;
+      }
+    }
+
+    .wplayer-mobile-play {
+      display: block;
+    }
+  }
+}
+
+// To hide scroll bar, apply this class to <body>
+.wplayer-web-fullscreen-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
