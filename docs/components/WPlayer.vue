@@ -7,7 +7,6 @@
 <script setup>
 import { onMounted } from "vue";
 import danmakuList from './danmaku.json';
-import * as WPlayer from "../../dist/WPlayer.min.js"
 
 let player = null;
 const options = {
@@ -34,9 +33,10 @@ const options = {
   ]
 }
 
-onMounted(()=>{
+onMounted(async () => {
   options.container = document.getElementById("wplayer");
-  player = new window.WPlayer(options);
+  await import('../../dist/WPlayer.min.js')
+  player = new WPlayer(options);
 })
 </script>
   

@@ -9,3 +9,4 @@ wxw
 package-lock.json
 docs/.vitepress/cache
 .vitepress/cache/
+docs/.vitepress/dist/

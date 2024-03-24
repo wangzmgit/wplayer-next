@@ -19,7 +19,6 @@ export default {
       }
     ],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['script', { src: '../../dist/WPlayer.min.js' }],
   ],
   themeConfig: {
     editLink: {
