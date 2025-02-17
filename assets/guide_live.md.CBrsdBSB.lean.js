@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ae as l}from"./chunks/framework.BHrE6nLq.js";const g=JSON.parse('{"title":"直播","description":"","frontmatter":{},"headers":[],"relativePath":"guide/live.md","filePath":"guide/live.md"}'),t={name:"guide/live.md"};function p(h,s,e,k,E,d){return n(),a("div",null,s[0]||(s[0]=[l("",5)]))}const y=i(t,[["render",p]]);export{g as __pageData,y as default};
