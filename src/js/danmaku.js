@@ -161,7 +161,7 @@ class Danmaku {
       const docFragment = document.createDocumentFragment();
 
       for (let i = 0; i < dan.length; i++) {
-        dan[i].type = utils.number2Type(dan[i].type);
+        dan[i].type = typeof dan[i].type === 'number' ? utils.number2Type(dan[i].type) : dan[i].type;
         if (!dan[i].color) {
           dan[i].color = 16777215;
         }

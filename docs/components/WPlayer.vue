@@ -4,7 +4,6 @@
   </div>
 </template>
 
-
 <script setup>
 import { onMounted } from "vue";
 import danmakuList from './danmaku.json';
@@ -46,4 +45,3 @@ onMounted(async () => {
   document.body.appendChild(script);
 })
 </script>
-  

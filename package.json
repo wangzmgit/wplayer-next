@@ -1,10 +1,9 @@
 {
   "name": "wplayer-next",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wow, such a lovely HTML5 danmaku video player",
   "main": "dist/WPlayer.min.js",
   "scripts": {
-    "start": "npm run dev",
     "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack/dev.config.js",
     "test": "",

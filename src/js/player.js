@@ -465,7 +465,6 @@ class WPlayer {
     });
 
     this.on('play', () => {
-      console.log("开始", this.paused)
       if (this.paused) {
         this.play(true);
       }
