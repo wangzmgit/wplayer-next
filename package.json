@@ -1,6 +1,6 @@
 {
   "name": "wplayer-next",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Wow, such a lovely HTML5 danmaku video player",
   "main": "dist/WPlayer.min.js",
   "scripts": {
