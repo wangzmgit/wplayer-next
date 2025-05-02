@@ -97,14 +97,18 @@
   <div class="wplayer-icons wplayer-icons-right">
     {{ if options.video.quality }}
     <div class="wplayer-quality">
-      <button class="wplayer-icon wplayer-quality-icon">{{ options.video.quality[options.video.defaultQuality].name }}</button>
-      <div class="wplayer-quality-mask">
-        <div class="wplayer-quality-list">
-        {{ each options.video.quality }}
-          <div class="wplayer-quality-item" data-index="{{ $index }}">{{ $value.name }}</div>
-        {{ /each }}
-        </div>
-      </div>
+      <button class="wplayer-icon wplayer-quality-icon">
+        <span class="wplayer-quality-icon-content">
+          <span class="wplayer-quality-text">{{ options.video.quality[options.video.defaultQuality].name }}</span>
+          <div class="wplayer-quality-mask">
+            <div class="wplayer-quality-list">
+            {{ each options.video.quality }}
+              <div class="wplayer-quality-item" data-index="{{ $index }}">{{ $value.name }}</div>
+            {{ /each }}
+            </div>
+          </div>
+        </span>
+      </button>
     </div>
     {{ /if }}
     {{ if options.danmaku && options.danmaku.comment }}
@@ -126,8 +130,8 @@
               </div>
               {{ /each }}
             </div>
-            </div>
-          </span>
+          </div>
+        </span>
       </button>
     </div>
     {{ if options.setting }}

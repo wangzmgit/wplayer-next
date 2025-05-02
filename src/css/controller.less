@@ -533,17 +533,17 @@
       height: 100%;
       z-index: 2;
 
-      .wplayer-speed-icon-content { 
+      .wplayer-speed-icon-content {
         &:hover {
           .wplayer-speed-box {
             display: block;
           }
-  
+
           .wplayer-speed-mask {
             display: block;
           }
         }
-  
+
         .wplayer-speed-mask {
           display: none;
           position: absolute;
@@ -553,7 +553,7 @@
           padding-bottom: 26px;
           transition: all .3s ease-in-out;
         }
-  
+
         .wplayer-speed-box {
           display: none;
           width: 70px;
@@ -562,8 +562,8 @@
           background: rgba(28, 28, 28, 0.9);
           transition: all .3s ease-in-out;
           overflow: hidden;
-  
-  
+
+
           .wplayer-speed-item {
             color: #fff;
             font-size: 12px;
@@ -573,7 +573,7 @@
             cursor: pointer;
             position: relative;
             line-height: 20px;
-  
+
             &:hover {
               background-color: rgba(255, 255, 255, .1);
             }
@@ -678,49 +678,52 @@
       height: 100%;
       z-index: 2;
 
-      &:hover {
-        .wplayer-quality-list {
-          display: block;
+      .wplayer-quality-icon-content {
+        &:hover {
+          .wplayer-quality-list {
+            display: block;
+          }
+
+          .wplayer-quality-mask {
+            display: block;
+          }
         }
 
         .wplayer-quality-mask {
-          display: block;
+          display: none;
+          position: absolute;
+          bottom: 26px;
+          left: -22px;
+          width: 80px;
+          padding-bottom: 24px;
+          transition: all .3s ease-in-out;
         }
-      }
 
-      .wplayer-quality-mask {
-        position: absolute;
-        bottom: 38px;
-        left: -18px;
-        width: 80px;
-        padding-bottom: 12px;
-        transition: all .3s ease-in-out;
-      }
+        .wplayer-quality-list {
+          display: none;
+          font-size: 12px;
+          width: 80px;
+          border-radius: 2px;
+          background: rgba(28, 28, 28, 0.9);
+          transition: all .3s ease-in-out;
+          overflow: hidden;
+          color: #fff;
+          text-align: center;
+        }
 
-      .wplayer-quality-list {
-        display: none;
-        font-size: 12px;
-        width: 80px;
-        border-radius: 2px;
-        background: rgba(28, 28, 28, 0.9);
-        transition: all .3s ease-in-out;
-        overflow: hidden;
-        color: #fff;
-        text-align: center;
-      }
+        .wplayer-quality-item {
+          color: #fff;
+          font-size: 12px;
+          height: 30px;
+          padding: 5px 10px;
+          box-sizing: border-box;
+          cursor: pointer;
+          position: relative;
+          line-height: 20px;
 
-      .wplayer-quality-item {
-        color: #fff;
-        font-size: 12px;
-        height: 30px;
-        padding: 5px 10px;
-        box-sizing: border-box;
-        cursor: pointer;
-        position: relative;
-        line-height: 20px;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, .1);
+          &:hover {
+            background-color: rgba(255, 255, 255, .1);
+          }
         }
       }
     }
