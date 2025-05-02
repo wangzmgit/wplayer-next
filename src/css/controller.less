@@ -533,47 +533,50 @@
       height: 100%;
       z-index: 2;
 
-      &:hover {
-        .wplayer-speed-box {
-          display: block;
+      .wplayer-speed-icon-content { 
+        &:hover {
+          .wplayer-speed-box {
+            display: block;
+          }
+  
+          .wplayer-speed-mask {
+            display: block;
+          }
         }
-
+  
         .wplayer-speed-mask {
-          display: block;
+          display: none;
+          position: absolute;
+          bottom: 26px;
+          right: -10px;
+          width: 70px;
+          padding-bottom: 26px;
+          transition: all .3s ease-in-out;
         }
-      }
-
-      .wplayer-speed-mask {
-        position: absolute;
-        bottom: 38px;
-        right: -10px;
-        width: 70px;
-        padding-bottom: 12px;
-        transition: all .3s ease-in-out;
-      }
-
-      .wplayer-speed-box {
-        display: none;
-        width: 70px;
-        text-align: center;
-        border-radius: 2px;
-        background: rgba(28, 28, 28, 0.9);
-        transition: all .3s ease-in-out;
-        overflow: hidden;
-
-
-        .wplayer-speed-item {
-          color: #fff;
-          font-size: 12px;
-          height: 30px;
-          padding: 5px 10px;
-          box-sizing: border-box;
-          cursor: pointer;
-          position: relative;
-          line-height: 20px;
-
-          &:hover {
-            background-color: rgba(255, 255, 255, .1);
+  
+        .wplayer-speed-box {
+          display: none;
+          width: 70px;
+          text-align: center;
+          border-radius: 2px;
+          background: rgba(28, 28, 28, 0.9);
+          transition: all .3s ease-in-out;
+          overflow: hidden;
+  
+  
+          .wplayer-speed-item {
+            color: #fff;
+            font-size: 12px;
+            height: 30px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: relative;
+            line-height: 20px;
+  
+            &:hover {
+              background-color: rgba(255, 255, 255, .1);
+            }
           }
         }
       }
@@ -585,69 +588,72 @@
       height: 100%;
       z-index: 2;
 
-      &:hover {
-        .wplayer-volume-box {
-          display: block;
+      .wplayer-volume-icon-content {
+        &:hover {
+          .wplayer-volume-box {
+            display: block;
+          }
+
+          .wplayer-volume-mask {
+            display: block;
+          }
         }
 
         .wplayer-volume-mask {
-          display: block;
+          display: none;
+          position: absolute;
+          bottom: 30px;
+          right: 0px;
+          width: 37px;
+          padding-bottom: 22px;
+          transition: all .3s ease-in-out;
         }
-      }
 
-      .wplayer-volume-mask {
-        position: absolute;
-        bottom: 38px;
-        right: 0px;
-        width: 37px;
-        padding-bottom: 12px;
-        transition: all .3s ease-in-out;
-      }
+        .wplayer-volume-box {
+          display: none;
+          width: 37px;
+          height: 136px;
+          border-radius: 2px;
+          background: rgba(28, 28, 28, 0.9);
+          transition: all .3s ease-in-out;
+          overflow: hidden;
+          z-index: 2;
+        }
 
-      .wplayer-volume-box {
-        display: none;
-        width: 37px;
-        height: 136px;
-        border-radius: 2px;
-        background: rgba(28, 28, 28, 0.9);
-        transition: all .3s ease-in-out;
-        overflow: hidden;
-        z-index: 2;
-      }
+        .wplayer-volume-bar-wrap {
+          display: inline-block;
+          margin: 8px 17px;
+          vertical-align: middle;
+          height: calc(100% - 16px);
 
-      .wplayer-volume-bar-wrap {
-        display: inline-block;
-        margin: 8px 17px;
-        vertical-align: middle;
-        height: calc(100% - 16px);
+          .wplayer-volume-bar {
+            position: relative;
+            width: 3px;
+            height: 100%;
+            background: #aaa;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
 
-        .wplayer-volume-bar {
-          position: relative;
-          width: 3px;
-          height: 100%;
-          background: #aaa;
-          cursor: pointer;
-          transition: all 0.3s ease-in-out;
-
-          .wplayer-volume-bar-inner {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            will-change: width;
-
-            .wplayer-thumb {
-              box-sizing: border-box;
+            .wplayer-volume-bar-inner {
               position: absolute;
-              top: -4px;
-              left: -4px;
-              height: 11px;
-              width: 11px;
-              border-radius: 50%;
-              cursor: pointer;
-              transition: all .3s ease-in-out;
-              background-color: #fff;
-              border: 2px solid;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              will-change: width;
+
+              .wplayer-thumb {
+                box-sizing: border-box;
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                height: 11px;
+                width: 11px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                background-color: #fff;
+                border: 2px solid;
+              }
             }
           }
         }

@@ -52,7 +52,7 @@ class Template {
     this.showDanmakuToggle = this.container.querySelector('.wplayer-showdan-setting-input');
     this.unlimitDanmaku = this.container.querySelector('.wplayer-setting-danunlimit');
     this.unlimitDanmakuToggle = this.container.querySelector('.wplayer-danunlimit-setting-input');
-    this.speedButton = this.container.querySelector('.wplayer-speed-icon');
+    this.speedButton = this.container.querySelector('.wplayer-speed-text');
     this.speedBox = this.container.querySelector('.wplayer-speed-box');
     this.speedItem = this.container.querySelectorAll('.wplayer-speed-item');
     this.danmakuOpacityBar = this.container.querySelector('.wplayer-danmaku-bar-inner');
