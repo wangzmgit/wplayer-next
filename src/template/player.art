@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <input class="wplayer-comment-input" type="text" placeholder="{{ tran('input-danmaku-enter') }}" maxlength="30">
+    <input class="wplayer-comment-input" type="text" placeholder="{{ tran('input-danmaku-enter') }}" maxlength="30" id="wplayer-comment-input-{{ index }}" name="wplayer-comment-input-{{ index }}">
     <button class="wplayer-icon wplayer-send-icon" data-balloon="{{ tran('send') }}" data-balloon-pos="up">
       <span class="wplayer-icon-content">{{@ icons.send }}</span>
     </button>
@@ -144,21 +144,21 @@
           <div class="wplayer-setting-item wplayer-setting-loop">
             <span class="wplayer-label">{{ tran('loop') }}</span>
             <div class="wplayer-toggle">
-              <input class="wplayer-toggle-setting-input" type="checkbox" name="wplayer-toggle">
+              <input class="wplayer-toggle-setting-input" type="checkbox" name="wplayer-toggle" id="wplayer-toggle">
               <label for="wplayer-toggle"></label>
             </div>
           </div>
           <div class="wplayer-setting-item wplayer-setting-showdan">
             <span class="wplayer-label">{{ tran('show-danmaku') }}</span>
             <div class="wplayer-toggle">
-              <input class="wplayer-showdan-setting-input" type="checkbox" name="wplayer-toggle-dan">
+              <input class="wplayer-showdan-setting-input" type="checkbox" name="wplayer-toggle-dan" id="wplayer-toggle-dan">
               <label for="wplayer-toggle-dan"></label>
             </div>
           </div>
           <div class="wplayer-setting-item wplayer-setting-danunlimit">
             <span class="wplayer-label">{{ tran('unlimited-danmaku') }}</span>
             <div class="wplayer-toggle">
-              <input class="wplayer-danunlimit-setting-input" type="checkbox" name="wplayer-toggle-danunlimit">
+              <input class="wplayer-danunlimit-setting-input" type="checkbox" name="wplayer-toggle-danunlimit" id="wplayer-toggle-danunlimit">
               <label for="wplayer-toggle-danunlimit"></label>
             </div>
           </div>
