@@ -505,7 +505,10 @@ class WPlayer {
     }
     this.switchingQuality = true;
     this.quality = this.options.video.quality[index];
-    this.template.qualityButton.innerHTML = this.quality.name;
+    const qualityText = this.template.qualityButton.querySelector('.wplayer-quality-text');
+    if (qualityText) {
+      qualityText.textContent = this.quality.name;
+    }
 
     const paused = this.video.paused;
     this.video.pause();
