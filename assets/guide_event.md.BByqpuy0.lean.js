@@ -1,0 +1,1 @@
+import{_ as l,c as a,o as e,ae as s}from"./chunks/framework.BHrE6nLq.js";const c=JSON.parse('{"title":"事件绑定","description":"","frontmatter":{},"headers":[],"relativePath":"guide/event.md","filePath":"guide/event.md"}'),t={name:"guide/event.md"};function n(d,i,h,p,o,r){return e(),a("div",null,i[0]||(i[0]=[s("",7)]))}const u=l(t,[["render",n]]);export{c as __pageData,u as default};
